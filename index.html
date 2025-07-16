@@ -3,37 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Clark</title>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <title>Clark Llamoso - Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="./assets/img/bg.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
   <header>
     <nav>
       <ul>
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../about/index.html">About Me</a></li>
-        <li><a href="../education/index.html">Education</a></li>
-        <li><a href="../projects/index.html">Projects</a></li>
-        <li><a href="./index.html">Contact</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/about/index.html">About Me</a></li>
+        <li><a href="./pages/education/index.html">Education</a></li>
+        <li><a href="./pages/projects/index.html">Projects</a></li>
+        <li><a href="./pages/contact/index.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="profile fade-in">
-      <h2 class="explore-title">Contact Me</h2>
-      <p class="intro">
-        Want to get in touch? You can contact me via the following channels:
-      </p>
-      <ul class="intro">
-        <li>📧 Email: clarkllamoso@yahoo.com\">clarkllamoso@yahoo.com</a></li>
-        <li>📂 GitHub: <a href=\"https://github.com/ClrkJcob\">github.com/ClrkJcob</a></li>
-      </ul>
+      <img src="./assets/img/2x2.jpg" alt="Clark Llamoso" class="profile-img" />
+      <p class="intro">Hi! I'm <strong>Clark Jacob P. Llamoso</strong>, an aspiring web designer and cybersecurity specialist, showcasing my work and growth through this online portfolio.</p>
+
+      <h2 class="explore-title">Explore My Portfolio</h2>
+
+      <div class="section-links">
+        <div class="link-box">
+          <i class="fas fa-user big-icon"></i>
+          <h3>About Me</h3>
+          <p>Discover who I am and my background.</p>
+          <a href="./pages/about/index.html">Go</a>
+        </div>
+
+        <div class="link-box">
+          <i class="fas fa-graduation-cap big-icon"></i>
+          <h3>Education</h3>
+          <p>Learn about my academic background.</p>
+          <a href="./pages/education/index.html">Go</a>
+        </div>
+
+        <div class="link-box">
+          <i class="fas fa-folder-open big-icon"></i>
+          <h3>Projects</h3>
+          <p>Explore my creative and technical works.</p>
+          <a href="./pages/projects/index.html">Go</a>
+        </div>
+
+        <div class="link-box">
+          <i class="fas fa-envelope big-icon"></i>
+          <h3>Contact</h3>
+          <p>Reach out to me for collaborations or inquiries.</p>
+          <a href="./pages/contact/index.html">Go</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Clark Jacob P. Llamoso. All rights reserved.</p>
   </footer>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
