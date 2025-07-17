@@ -33,7 +33,9 @@ body::before {
   background: linear-gradient(to bottom, rgba(255, 193, 7, 0.08), rgba(0, 0, 0, 0.9));
 }
 
-/* Header */
+/*-------------------------
+  Header Navigation (if needed)
+--------------------------*/
 header {
   background-color: var(--bg-darker);
   padding: 1rem 2rem;
@@ -59,12 +61,13 @@ nav a:hover {
   color: var(--primary-hover);
 }
 
-/* Main */
+/*-------------------------
+  Main Layout
+--------------------------*/
 main {
   padding: 2rem;
 }
 
-/* Section Titles */
 .explore-title {
   font-size: 2rem;
   text-align: center;
@@ -73,29 +76,45 @@ main {
   text-shadow: 0 0 10px rgba(255, 152, 0, 0.4);
 }
 
-/* About Section */
+/*-------------------------
+  About Section
+--------------------------*/
 .about-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display:block
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  justify-content: center;
   margin-top: 2rem;
 }
 
 .about-img {
-  width: 250px;
+  max-width: 300px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 0 25px var(--box-shadow-glow);
+  display: block;
+  margin: 0 auto;
+}
+
+
+.about-container > :nth-child(n+4) {
+  grid-column: span 2;
+  justify-self: center;
+  width: 50%;
 }
 
 .intro {
-  max-width: 500px;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: justify;
   font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 1rem;
 }
 
-/* Profile Picture */
+
 .profile-img {
   width: 200px;
   border-radius: 50%;
@@ -104,7 +123,10 @@ main {
   box-shadow: 0 0 15px var(--box-shadow-glow);
 }
 
-/* Education Gallery */
+
+/*-------------------------
+  Education Section
+--------------------------*/
 .education-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -123,7 +145,9 @@ main {
   transform: scale(1.05);
 }
 
-/* Section Links (for page2/index.html) */
+/*-------------------------
+  Section Links (Page 2)
+--------------------------*/
 .section-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -132,12 +156,25 @@ main {
 }
 
 .link-box {
-  background-color: var(--bg-darker);
+  background-color: var(--card-bg); /* if using a variable */
   padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 193, 7, 0.2);
+  border-radius: 20px;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff; /* Make all text inside brighter */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
+
+.link-box h3 {
+  color: #ffffff; /* Brighter heading */
+  margin-bottom: 0.5rem;
+}
+
+.link-box p {
+  color: #e0e0e0; /* Softer, readable description */
+  font-size: 0.95rem;
+}
+
 
 .big-icon {
   font-size: 2rem;
@@ -145,22 +182,39 @@ main {
   color: var(--primary-color);
 }
 
-/* Hobbies Section */
+/*-------------------------
+  Hobbies Section
+--------------------------*/
 .hobby-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
+  display:block;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem 0;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .hobby-gallery img {
-  width: 200px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-/* Projects Section */
+.hobby-gallery img:nth-child(4) {
+  grid-column: 2 / 3;
+}
+.hobby-gallery img:nth-child(5) {
+  grid-column: 3 / 4;
+}
+
+
+/*-------------------------
+  Projects Section
+--------------------------*/
 .projects {
   display: grid;
   gap: 2rem;
@@ -190,7 +244,9 @@ main {
   border-radius: 8px;
 }
 
-/* Buttons */
+/*-------------------------
+  Buttons 
+--------------------------*/
 .project-btn {
   display: inline-block;
   margin-top: 1rem;
@@ -208,29 +264,38 @@ main {
   background: var(--primary-hover);
 }
 
-/* Contact Info */
+/*-------------------------
+  Contact Section
+--------------------------*/
 .contact-section {
   text-align: center;
   margin-top: 2rem;
+  color: #ffffff;
+  font-size: 1.2rem; 
+  line-height: 1.8;
 }
 
 .contact-details {
   list-style: none;
   padding: 0;
-  font-size: 1.1rem;
-  line-height: 2;
+  margin-top: 1rem;
+  font-size: 1.3rem; 
+  color: #e0e0e0; 
 }
 
 .contact-details a {
-  color: var(--primary-color);
+  color: #add8ff; 
   text-decoration: none;
+  font-weight: 500;
 }
 
 .contact-details a:hover {
-  color: var(--primary-hover);
+  color: #66c2ff; 
 }
 
-/* Footer */
+/*-------------------------
+  Footer
+--------------------------*/
 footer {
   text-align: center;
   padding: 1rem;
@@ -241,7 +306,9 @@ footer {
   box-shadow: 0 -2px 10px rgba(255, 152, 0, 0.1);
 }
 
-/* Animations */
+/*-------------------------
+  Animations
+--------------------------*/
 .fade-in {
   animation: fadeIn 1.2s ease-in forwards;
   opacity: 0;
@@ -258,15 +325,28 @@ footer {
   }
 }
 
-/* Responsive */
+/*-------------------------
+  Responsive Design
+--------------------------*/
 @media (max-width: 768px) {
-  .about-container,
-  .education-gallery {
+  .about-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .about-img,
+  .about-img {
+    width: 90%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .education-gallery,
+  .hobby-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .education-gallery img,
   .hobby-gallery img {
     width: 90%;
@@ -275,4 +355,36 @@ footer {
   .section-links {
     grid-template-columns: 1fr;
   }
+
+  .about-container > :nth-child(n+4) {
+    width: 90%;
+    grid-column: auto;
+  }
 }
+@media (max-width: 768px) {
+  .hobby-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hobby-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+
+.link-box:hover {
+  transform: scale(1.03);
+}
+
