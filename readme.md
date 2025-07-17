@@ -17,7 +17,6 @@
 
 ![](https://visit-counter.vercel.app/counter.png?page=ClrkJcob/WD-Finals-Llamoso)
 
-
 ---
 
 <details>
@@ -32,6 +31,7 @@
     </li>
     <li><a href="#rules-practices-and-principles">Rules, Practices and Principles</a></li>
     <li><a href="#resources">Resources</a></li>
+    <li><a href="#file-structure">File Structure</a></li>
   </ol>
 </details>
 
@@ -43,26 +43,26 @@ This project is a responsive multimedia portfolio website made for my final proj
 
 ### 🎯 Guiding Questions
 
-- **What is this project about?**
+- **What is this project about?**  
   A personal portfolio website built using HTML, CSS, and a little JavaScript.
 
-- **What is its purpose?**
+- **What is its purpose?**  
   To demonstrate front-end design skills and personal branding.
 
-- **What are its key components?**
+- **What are its key components?**  
   Landing page, About Me, Education, Projects, and Contact.
 
-- **What technologies are used?**
+- **What technologies are used?**  
   HTML, CSS, JavaScript (for interactivity and animation)
 
 ---
 
 ## 🧩 Key Components
 
-- Multi-page responsive layout
-- Background video on homepage
-- Contact and Projects sections
-- Modern design with animations
+- Multi-page responsive layout  
+- Background video on homepage  
+- Contact and Projects sections  
+- Modern design with animations  
 
 ### 💻 Technology
 
@@ -74,11 +74,11 @@ This project is a responsive multimedia portfolio website made for my final proj
 
 ## 📏 Rules, Practices and Principles
 
-1. Folder named `WD-Clark-Portfolio`
-2. Each page has its own folder with `index.html`
-3. Use camelCase for file naming (e.g. `clarkPhoto.jpg`)
-4. External CSS only — no inline styling
-5. Consistent spacing, font, and color palette
+1. Folder named `WD-Clark-Finals`  
+2. Each page has its own folder with `index.html`  
+3. Use camelCase for file naming (e.g. `clark1.jpg`)  
+4. External CSS only — no inline styling  
+5. Consistent spacing, font, and color palette  
 
 ---
 
@@ -92,3 +92,40 @@ This project is a responsive multimedia portfolio website made for my final proj
 | Visit Counter     | Page visitor counter                 | [https://visit-counter.vercel.app](https://visit-counter.vercel.app) |
 
 ---
+
+## 📁 File Structure
+
+
+```
+
+WD-Finals-Llamoso/              
+├── assets/
+│   ├── css/
+│   │   └── style.css        
+│   ├── img/
+│   │   ├── clark1.jpg
+│   │   ├── clark2.jpg
+│   │   ├── clark3.jpg
+│   │   └── clark4.jpg
+│   └── js/                  
+├── pages/
+│   ├── page1/
+│   │   └── index.html        
+│   │   
+│   │               
+│   ├── page2/
+│   │   └──index.html        
+│   │   
+│   │       
+│   ├── page3/
+│   │   └── index.html       
+│   │   
+│   │       
+│   └── page4/
+│       └── index.html        
+│      
+│           
+├── index.html                 
+├── readme.md   
+
+```
