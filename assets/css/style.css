@@ -145,6 +145,23 @@ main {
   transform: scale(1.05);
 }
 
+.education-img {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 15px var(--box-shadow-glow);
+  margin: 1rem auto;
+  display: block;
+}
+.education-section {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 /*-------------------------
   Section Links (Page 2)
 --------------------------*/
@@ -283,15 +300,16 @@ main {
   color: #e0e0e0; 
 }
 
-.contact-details a {
-  color: #add8ff; 
+.contact-details a,
+.contact-details a:visited,
+.contact-details a:hover,
+.contact-details a:active,
+.contact-details a:focus {
+  color: var(white) !important;
   text-decoration: none;
   font-weight: 500;
 }
 
-.contact-details a:hover {
-  color: #66c2ff; 
-}
 
 /*-------------------------
   Footer
