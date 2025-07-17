@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact - Clark</title>
   <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -14,7 +16,7 @@
         <li><a href="../page1/index.html">About Me</a></li>
         <li><a href="../page2/index.html">Education</a></li>
         <li><a href="../page3/index.html">Projects</a></li>
-        <li><a href="./index.html">Contact</a></li>
+        <li><a href="./index.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -22,12 +24,22 @@
   <main>
     <section class="contact-section fade-in">
       <h2 class="explore-title">Get in Touch</h2>
-      <p>You can reach me at:</p>
-      <ul class="contact-details">
-        <li>Email: <a href="mailto:clarkllamoso@yahoo.com">clarkllamoso@yahoo.com</a></li>
-        <li>GitHub: <a href="https://github.com/ClrkJcob" target="_blank">github.com/ClrkJcob</a></li>
-        <li>LinkedIn: <a href="#" target="_blank">[Your LinkedIn if any]</a></li>
-      </ul>
+      <p class="contact-intro">Feel free to reach out through the form below or any of my social platforms!</p>
+
+      <div class="contact-container">
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> <a href="mailto:clarkllamoso@yahoo.com">clarkllamoso@yahoo.com</a></p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/ClrkJcob" target="_blank">github.com/ClrkJcob</a></p>
+          <p><i class="fab fa-linkedin"></i> <a href="#" target="_blank">LinkedIn (optional)</a></p>
+        </div>
+      </div>
     </section>
   </main>
 
