@@ -93,11 +93,10 @@ This project is a responsive multimedia portfolio website made for my final proj
 
 ---
 
+
 ## 📁 File Structure
 
-
 ```
-
 WD-Finals-Llamoso/              
 ├── assets/
 │   ├── css/
@@ -106,26 +105,27 @@ WD-Finals-Llamoso/
 │   │   ├── clark1.jpg
 │   │   ├── clark2.jpg
 │   │   ├── clark3.jpg
-│   │   └── clark4.jpg
-│   └── js/                  
+│   │   ├── clark4.jpg
+│   │   ├── clarkabout1.jpg
+│   │   ├── clarkabout2.jpg
+│   │   ├── clarkabout3.jpg
+│   │   ├── clarkabout4.jpg
+│   │   ├── clarkabout5.jpg
+│   │   ├── clarkeducation1.jpg
+│   │   ├── clarkeducation2.jpg
+│   │   ├── clarkeducation3.jpg
+│   │   └── clarkeducation4.jpg
+│   └── js/
 ├── pages/
 │   ├── page1/
 │   │   └── index.html        
-│   │   
-│   │               
 │   ├── page2/
-│   │   └──index.html        
-│   │   
-│   │       
+│   │   └── index.html        
 │   ├── page3/
 │   │   └── index.html       
-│   │   
-│   │       
 │   └── page4/
 │       └── index.html        
-│      
-│           
 ├── index.html                 
-├── readme.md   
-
+└── README.md
 ```
+
