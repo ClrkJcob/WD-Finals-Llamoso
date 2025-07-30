@@ -80,12 +80,13 @@ main {
   About Section
 --------------------------*/
 .about-container {
-  display:block
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
 }
+
 
 .about-img {
   max-width: 300px;
