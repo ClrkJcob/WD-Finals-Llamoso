@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://github.com/clarkllamoso/">
-    <img src="./assets/img/lightning (1).png" alt="Logo" width="130" height="100">
+    <img src="./assets/img/clark4.jpg" alt="Logo" width="130" height="100">
   </a>
   <h3 align="center">My Online Portfolio</h3>
 </div>
